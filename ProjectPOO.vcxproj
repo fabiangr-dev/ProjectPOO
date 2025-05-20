@@ -127,7 +127,20 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="ProjectPOO.cpp" />
+    <ClCompile Include="BuscarEstudiante.cpp" />
+    <ClCompile Include="EliminarEstudiante.cpp" />
+    <ClCompile Include="Estudiante.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="MostrarEstudiantes.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="estudiantes.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BuscarEstudiante.h" />
+    <ClInclude Include="EliminarEstudiante.h" />
+    <ClInclude Include="Estudiante.h" />
+    <ClInclude Include="MostrarEstudiantes.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

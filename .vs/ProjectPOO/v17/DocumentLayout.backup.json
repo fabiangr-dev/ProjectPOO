@@ -3,8 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\fabia\\source\\repos\\ProjectPOO\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BEBA0124-375A-4082-8468-D17A2E477A63}|ProjectPOO.vcxproj|C:\\Users\\fabia\\source\\repos\\ProjectPOO\\ProjectPOO.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{BEBA0124-375A-4082-8468-D17A2E477A63}|ProjectPOO.vcxproj|solutionrelative:ProjectPOO.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{BEBA0124-375A-4082-8468-D17A2E477A63}|ProjectPOO.vcxproj|C:\\Users\\fabia\\source\\repos\\ProjectPOO\\EliminarEstudiante.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{BEBA0124-375A-4082-8468-D17A2E477A63}|ProjectPOO.vcxproj|solutionrelative:EliminarEstudiante.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BEBA0124-375A-4082-8468-D17A2E477A63}|ProjectPOO.vcxproj|C:\\Users\\fabia\\source\\repos\\ProjectPOO\\EliminarEstudiante.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{BEBA0124-375A-4082-8468-D17A2E477A63}|ProjectPOO.vcxproj|solutionrelative:EliminarEstudiante.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BEBA0124-375A-4082-8468-D17A2E477A63}|ProjectPOO.vcxproj|C:\\Users\\fabia\\source\\repos\\ProjectPOO\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{BEBA0124-375A-4082-8468-D17A2E477A63}|ProjectPOO.vcxproj|solutionrelative:main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,19 +22,46 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ProjectPOO.cpp",
-              "DocumentMoniker": "C:\\Users\\fabia\\source\\repos\\ProjectPOO\\ProjectPOO.cpp",
-              "RelativeDocumentMoniker": "ProjectPOO.cpp",
-              "ToolTip": "C:\\Users\\fabia\\source\\repos\\ProjectPOO\\ProjectPOO.cpp",
-              "RelativeToolTip": "ProjectPOO.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEsAAAA1AAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "main.cpp",
+              "DocumentMoniker": "C:\\Users\\fabia\\source\\repos\\ProjectPOO\\main.cpp",
+              "RelativeDocumentMoniker": "main.cpp",
+              "ToolTip": "C:\\Users\\fabia\\source\\repos\\ProjectPOO\\main.cpp",
+              "RelativeToolTip": "main.cpp",
+              "ViewState": "AgIAAGQAAAAAAAAAAAAAAGIAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-05-15T19:38:22.238Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "EliminarEstudiante.cpp",
+              "DocumentMoniker": "C:\\Users\\fabia\\source\\repos\\ProjectPOO\\EliminarEstudiante.cpp",
+              "RelativeDocumentMoniker": "EliminarEstudiante.cpp",
+              "ToolTip": "C:\\Users\\fabia\\source\\repos\\ProjectPOO\\EliminarEstudiante.cpp",
+              "RelativeToolTip": "EliminarEstudiante.cpp",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAABEAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-05-20T22:05:14.326Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "EliminarEstudiante.h",
+              "DocumentMoniker": "C:\\Users\\fabia\\source\\repos\\ProjectPOO\\EliminarEstudiante.h",
+              "RelativeDocumentMoniker": "EliminarEstudiante.h",
+              "ToolTip": "C:\\Users\\fabia\\source\\repos\\ProjectPOO\\EliminarEstudiante.h",
+              "RelativeToolTip": "EliminarEstudiante.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-05-20T22:04:57.162Z",
               "EditorCaption": ""
             }
           ]

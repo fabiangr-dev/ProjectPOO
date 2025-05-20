@@ -1,2 +1,5 @@
-﻿  ProjectPOO.cpp
+﻿  EliminarEstudiante.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\filesystem(12): warning STL4038: The contents of <filesystem> are available only with C++17 or later.
+  main.cpp
+  Generating Code...
   ProjectPOO.vcxproj -> C:\Users\fabia\source\repos\ProjectPOO\x64\Debug\ProjectPOO.exe
