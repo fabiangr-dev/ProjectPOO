@@ -130,7 +130,9 @@
     <ClCompile Include="BuscarEstudiante.cpp" />
     <ClCompile Include="EliminarEstudiante.cpp" />
     <ClCompile Include="Estudiante.cpp" />
+    <ClCompile Include="IntroducirNotas.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="ModificarEstudiante.cpp" />
     <ClCompile Include="MostrarEstudiantes.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -140,6 +142,8 @@
     <ClInclude Include="BuscarEstudiante.h" />
     <ClInclude Include="EliminarEstudiante.h" />
     <ClInclude Include="Estudiante.h" />
+    <ClInclude Include="IntroducirNotas.h" />
+    <ClInclude Include="ModificarEstudiante.h" />
     <ClInclude Include="MostrarEstudiantes.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

@@ -30,6 +30,12 @@
     <ClCompile Include="EliminarEstudiante.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="ModificarEstudiante.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IntroducirNotas.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="estudiantes.txt" />
@@ -45,6 +51,12 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="EliminarEstudiante.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ModificarEstudiante.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IntroducirNotas.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

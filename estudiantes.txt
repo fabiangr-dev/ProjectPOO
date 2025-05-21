@@ -1,2 +1,2 @@
-T00061320|Fabian Granados|Ing mecatronica
-T00061321|Reinaldo Jose|Ing sistemas
+T00061320|Fabian Granados|ING mecatronica|4.80|4.0|4.00|4.24
+T00061321|Jesus Cristo|ING mecanica|5.00|4.00|3.00|3.95

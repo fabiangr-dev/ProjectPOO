@@ -24,16 +24,26 @@ void buscarEstudiantePorCodigo(const string& nombreArchivo) {
         while (getline(archivo, linea)) {
             stringstream ss(linea);
             string codigo, nombre, carrera;
+            string nota1Str, nota2Str, nota3Str, notaFinalStr;
 
+            // Leer las 7 partes del registro
             if (getline(ss, codigo, '|') &&
                 getline(ss, nombre, '|') &&
-                getline(ss, carrera)) {
+                getline(ss, carrera, '|') &&
+                getline(ss, nota1Str, '|') &&
+                getline(ss, nota2Str, '|') &&
+                getline(ss, nota3Str, '|') &&
+                getline(ss, notaFinalStr)) {
 
                 if (codigo == codigoBuscar) {
-                    cout << "\n✅ Estudiante encontrado:\n";
-                    cout << "Codigo  : " << codigo << endl;
-                    cout << "Nombre  : " << nombre << endl;
-                    cout << "Carrera : " << carrera << endl;
+                    cout << "\nEstudiante encontrado:\n";
+                    cout << "Codigo    : " << codigo << endl;
+                    cout << "Nombre    : " << nombre << endl;
+                    cout << "Carrera   : " << carrera << endl;
+                    cout << "Nota 1    : " << nota1Str << endl;
+                    cout << "Nota 2    : " << nota2Str << endl;
+                    cout << "Nota 3    : " << nota3Str << endl;
+                    cout << "Nota Final: " << notaFinalStr << endl;
                     encontrado = true;
                     break;
                 }
@@ -43,7 +53,7 @@ void buscarEstudiantePorCodigo(const string& nombreArchivo) {
         archivo.close();
 
         if (!encontrado) {
-            cout << "\n❌ No se encontro un estudiante con el codigo ingresado.\n";
+            cout << "\nNo se encontro un estudiante con el codigo ingresado.\n";
             cout << "¿Desea:\n1. Ingresar otro codigo\n2. Volver al menu principal\n";
             cout << "Seleccione una opcion (1 o 2): ";
             int opcion;
@@ -60,3 +70,4 @@ void buscarEstudiantePorCodigo(const string& nombreArchivo) {
 
     } while (true);
 }
+

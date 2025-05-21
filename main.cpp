@@ -5,6 +5,9 @@
 #include "MostrarEstudiantes.h"
 #include "BuscarEstudiante.h"
 #include "EliminarEstudiante.h"
+#include "ModificarEstudiante.h"
+#include "IntroducirNotas.h"
+
 using namespace std;
 
 class Menu {
@@ -100,11 +103,11 @@ private:
     }
 
     void modificarEstudiante() {
-        cout << "[Funcion en progreso: Modificar Estudiante]\n";
+        ::modificarEstudiante("estudiantes.txt");
     }
 
     void introducirNotas() {
-        cout << "[Funcion en progreso: Introducir Notas]\n";
+        ::introducirNotas("estudiantes.txt");
     }
 };
 

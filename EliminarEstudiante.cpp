@@ -3,8 +3,7 @@
 #include <iostream>
 #include <regex>
 #include <string>
-#include <vector>
-#include <filesystem>
+#include <cstdio>
 
 using namespace std;
 
@@ -19,45 +18,61 @@ void eliminarEstudiante(const string& archivoNombre) {
     cin >> codigo;
 
     if (!codigoValido(codigo)) {
-        cout << "Codigo invalido.\n";
+        cout << "Código inválido.\n";
         return;
     }
 
-    ifstream archivo(archivoNombre);
-    if (!archivo.is_open()) {
+    ifstream archivoEntrada(archivoNombre);
+    if (!archivoEntrada.is_open()) {
         cout << "No se pudo abrir el archivo.\n";
         return;
     }
 
-    vector<string> lineas;
+    ofstream archivoTemp("temp.txt");
+    if (!archivoTemp.is_open()) {
+        cout << "No se pudo crear el archivo temporal.\n";
+        archivoEntrada.close();
+        return;
+    }
+
     string linea;
     bool encontrado = false;
 
-    while (getline(archivo, linea)) {
+    while (getline(archivoEntrada, linea)) {
         size_t pos = linea.find('|');
         if (pos != string::npos) {
             string codigoArchivo = linea.substr(0, pos);
             if (codigoArchivo != codigo) {
-                lineas.push_back(linea);
+                archivoTemp << linea << endl;
             }
             else {
                 encontrado = true;
             }
         }
+        else {
+            archivoTemp << linea << endl;
+        }
     }
 
-    archivo.close();
+    archivoEntrada.close();
+    archivoTemp.close();
 
     if (!encontrado) {
+        remove("temp.txt");
         cout << "No se encontró un estudiante con ese código.\n";
         return;
     }
 
-    ofstream archivoSalida(archivoNombre, ios::trunc);
-    for (const string& l : lineas) {
-        archivoSalida << l << endl;
+    if (remove(archivoNombre.c_str()) != 0) {
+        cout << "Error al eliminar el archivo original.\n";
+        return;
     }
 
-    archivoSalida.close();
+    if (rename("temp.txt", archivoNombre.c_str()) != 0) {
+        cout << "Error al renombrar el archivo temporal.\n";
+        return;
+    }
+
     cout << "Estudiante eliminado correctamente.\n";
 }
+

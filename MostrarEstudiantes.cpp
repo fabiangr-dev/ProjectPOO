@@ -2,7 +2,7 @@
 #include <iostream>
 #include <fstream>
 #include <iomanip>
-#include <sstream> // Para std::stringstream
+#include <sstream>
 
 void mostrarEstudiantes(const std::string& nombreArchivo) {
     std::ifstream archivo(nombreArchivo);
@@ -18,24 +18,42 @@ void mostrarEstudiantes(const std::string& nombreArchivo) {
     std::cout << std::left;
     std::cout << std::setw(6) << "No."
         << std::setw(12) << "Codigo"
-        << std::setw(30) << "Nombre"
-        << std::setw(25) << "Carrera" << "\n";
-    std::cout << std::string(73, '-') << "\n";
+        << std::setw(25) << "Nombre"
+        << std::setw(20) << "Carrera"
+        << std::setw(8) << "Nota1"
+        << std::setw(8) << "Nota2"
+        << std::setw(8) << "Nota3"
+        << std::setw(10) << "NotaFinal" << "\n";
+
+    std::cout << std::string(97, '-') << "\n";
 
     while (getline(archivo, linea)) {
         std::stringstream ss(linea);
-        std::string codigo, nombre, carrera;
+        std::string campos[7];  // codigo, nombre, carrera, nota1, nota2, nota3, notaFinal
+        std::string campo;
+        int i = 0;
 
-        if (getline(ss, codigo, '|') &&
-            getline(ss, nombre, '|') &&
-            getline(ss, carrera)) {
-
-            std::cout << std::setw(6) << contador
-                << std::setw(12) << codigo
-                << std::setw(30) << nombre
-                << std::setw(25) << carrera << "\n";
-            contador++;
+        // Extraer campos separados por '|'
+        while (getline(ss, campo, '|') && i < 7) {
+            campos[i++] = campo;
         }
+
+        // Rellenar campos faltantes con "-"
+        while (i < 7) {
+            campos[i++] = "-";
+        }
+
+        std::cout << std::setw(6) << contador
+            << std::setw(12) << campos[0]
+            << std::setw(25) << campos[1]
+            << std::setw(20) << campos[2]
+            << std::setw(8) << (campos[3].empty() ? "-" : campos[3])
+            << std::setw(8) << (campos[4].empty() ? "-" : campos[4])
+            << std::setw(8) << (campos[5].empty() ? "-" : campos[5])
+            << std::setw(10) << (campos[6].empty() ? "-" : campos[6])
+            << "\n";
+
+        contador++;
     }
 
     archivo.close();
@@ -44,3 +62,5 @@ void mostrarEstudiantes(const std::string& nombreArchivo) {
         std::cout << "No hay estudiantes registrados.\n";
     }
 }
+
+
